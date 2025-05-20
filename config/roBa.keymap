@@ -50,7 +50,6 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
-
     };
 
     behaviors {
@@ -62,12 +61,14 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
 
             // 追加: スクロールのタップ時間を設定 (20ms)
+
             tap-ms = <20>;
         };
     };
@@ -80,7 +81,7 @@
 &kp Q      &kp W         &kp E         &kp R                 &kp T                                                                      &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A      &kp S         &kp D         &kp F                 &kp G                 &kp LS(LG(ESCAPE))              &kp MINUS            &kp H        &kp J  &kp K      &kp L    &kp SQT
 &kp Z      &kp X         &kp C         &kp V                 &kp B                 &kp COLON                       &kp SEMICOLON        &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 TAB  &mt LEFT_SHIFT SPACE  &lt_to_layer_0 5 RS(SPACE)      &mt RCTRL BACKSPACE  &lt 2 ENTER                             &kp DEL
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 TAB  &mt LEFT_SHIFT SPACE  &lt_to_layer_0 5 LC(SPACE)      &mt RCTRL BACKSPACE  &lt 2 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
