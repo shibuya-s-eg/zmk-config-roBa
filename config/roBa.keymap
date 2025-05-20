@@ -97,7 +97,7 @@
         NUM {
             bindings = <
 &none         &none         &kp ASTERISK  &kp SLASH     &none                                  &kp EQUAL     &kp PLUS      &kp MINUS     &none         &kp COMMA
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans       &kp DELETE  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp ESC      &kp DELETE  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
 &kp F5        &kp F4        &kp F3        &kp F2        &kp F1        &kp F12      &kp F11     &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
 &trans        &trans        &trans        &trans        &trans        &trans       &trans      &trans                                                  &none
             >;
